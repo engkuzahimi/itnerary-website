@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sourcecss.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>IT-Nerary</title>
+</head>
+<body>
+    <img id="landinglogin" src="m.jpg" alt="">
+	<nav>IT-NERARY GROUP
+		<div class="nav-button main-text">
+                
+                <a href="aboutus.html">|  About Us  |</a>
+                <a href="inquiry.html">Inquiry  |</a>
+                <a href="mainpage.html">HOME  |</a></div></nav>
+    <!--<div class="topbar">s</div> -->
+
+    <?php
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "itnerary";
+    
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully";
+    ?>
+
+    <div class="container">
+        <form action="actionpage.php" method="POST" style="text-align:center;">
+            <h1>INQUIRY</h1>
+            <p>Name</p>
+            <input required style="width: 40%; position: relative; left: 30%;" type="text" name="name">
+            <p>Location</p>
+            <input required style="width: 40%; position: relative; left: 30%;" type="text" name="location">
+            <p>Phone Number</p>
+            <input required style="width: 40%; position: relative; left: 30%;" type="text" name="phone_num">
+            <p>Inquiry</p>
+            <input required style="width: 60%; position: relative; left: 20%;" type="text" name="inquiry">
+            <button style="position: absolute; top:70%; left:35%;" type="submit" name="submit" value="submit">Submit</button>
+        </form>
+        </div>
+    
+</body>
+</html>
