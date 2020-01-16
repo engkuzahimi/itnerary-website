@@ -11,7 +11,7 @@
 </head>
 
 
-<body onload="showCurrentTime()">
+<body onload="initCounter()" onpopstate="initCounter()">
 	<nav class="main-text">
 		<div class="icon">
 			<p>IT-NERARY GROUP</p>
@@ -25,77 +25,55 @@
 	<!--<div class="topbar">s</div> -->
 	<div class="maincontent">
 		<div class="imgholder">
-			<img src="https://source.unsplash.com/Rkfpms9o5fk/720x480" alt="PhiPhiIslands">
+			<img src="https://source.unsplash.com/oc4kVkjQJmI/720x480" alt="KL">
 			<div class="text-link">
-			<a href="SA.html".html">Phi Phi Islands</a>
+			<a href="location/locations.html" onclick="placed(0)">Kuala Lumpur</a>
 			</div>
 		</div>
 		<div class="imgholder"">
-			<img id="img" src="https://source.unsplash.com/Fj_39H4NeOo/720x480" alt="Maldives">
+			<img id="img" src="https://source.unsplash.com/_VI5TIoEvoE/720x480" alt="Penang">
 			<div class="text-link">
-				<a href="SA.html".html">Maldives</a>
+				<a href="location/locations.html" onclick="placed(1)">Penang</a>
 				</div>
 		</div>
 		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/vR-Nb0bncOY/720x480" alt="Shah Alam">
+			<img id="img" src="https://source.unsplash.com/_p0OdENA13Y/720x480" alt="Maldives">
 			<div class="text-link">
-				<a href="SA.html".html">Shah Alam</a>
+				<a href="location/locations.html" onclick="placed(2)">Maldives</a>
 				</div>
 		</div>
 		<div class="imgholder">
-			<img src="https://source.unsplash.com/wlyiPNaTobo/720x480" alt="Penang Island">
+			<img src="https://source.unsplash.com/K1YRblz-rD0/720x480" alt="Ha Long Island">
 			<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
+				<a href="location/locations.html" onclick="placed(3)">Ha Long Island</a>
 				</div>
 		</div>
 		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/TaA3vOBIfow/720x480" alt="Mt. Kinabalu">
+			<img id="img" src="https://source.unsplash.com/fZdI1VtMzA8/720x480" alt="Singapore">
 			<div class="text-link">
-						<a href="SA.html".html">Learn More</a></div>
+				<a href="location/locations.html" onclick="placed(4)">Singapore</a></div>
 		</div>
 		<div class="imgholder">
 			<img id="img" src="https://source.unsplash.com/Gm4hVeXsboA/720x480" alt="Ipoh">
 			<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
+				<a href="location/locations.html" onclick="placed(5)">Ipoh</a>
 				</div>
 		</div>
 		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/LbjcsNneKCY/720x480" alt="Langkawi">
+			<img id="img" src="https://source.unsplash.com/EFZqH5wzIbY/720x480" alt="Bangkok">
 			<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
+				<a href="location/locations.html" onclick="placed(6)">Bangkok</a>
 				</div>
 		</div>
 		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/6U-sSfBV-gM/720x480" alt="Kuala Lumpur">
+			<img id="img" src="https://source.unsplash.com/j9kwJlGRbPI/720x480" alt="Jakarta">
 			<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
+				<a href="location/locations.html" onclick="placed(7)">Jakarta</a>
 				</div>
 		</div>
-		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/TaA3vOBIfow/720x480" alt="Jakarta">
-			<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
-				</div>
-		</div>
-		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/TaA3vOBIfow/720x480" alt="">
-			<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
-				</div>
-		</div>
-		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/TaA3vOBIfow/720x480">
-						<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
-				</div>
-		</div>
-		<div class="imgholder">
-			<img id="img" src="https://source.unsplash.com/TaA3vOBIfow/720x480">
-						<div class="text-link">
-				<a href="SA.html".html">Learn More</a>
-				</div>
 		</div>
 	
 		</div>
 </body>
+<script src="location/webscript.js"></script>
 </html>
