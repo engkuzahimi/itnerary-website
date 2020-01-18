@@ -16,37 +16,37 @@ window.addEventListener("load", () =>{
         switch (placeNum) {
             case 0: placeId = "Kuala Lumpur"; 
                     collectionsID ="9381833";
-                    locationImg ="https://source.unsplash.com/oc4kVkjQJmI/720x480";
+                    locationImg ="url(https://source.unsplash.com/oc4kVkjQJmI/720x480) 50% no-repeat";
                     longText = "Kuala Lumpur is the capital city of Malaysia, boasting gleaming skyscrapers, colonial architecture, charming locals, and a myriad of natural attractions. Divided into numerous districts, its main hub is called the Golden Triangle which comprises Bukit Bintang, KLCC and Chinatown.";
                     break;
             case 1: placeId = "Penang"; 
                     collectionsID ="9382083";
-                    locationImg ="https://source.unsplash.com/_VI5TIoEvoE/720x480";
+                    locationImg ="url(https://source.unsplash.com/_VI5TIoEvoE/720x480)";
                     longText = "";  
                     break;
             case 2: placeId = "Maldives"; 
                     collectionsID ="9382075"; 
-                    locationImg ="https://source.unsplash.com/_p0OdENA13Y/720x480";
+                    locationImg ="url(https://source.unsplash.com/_p0OdENA13Y/720x480)";
                     longText = ""; 
                     break;
             case 3: placeId = "Ha Long"; 
                     collectionsID ="9382101"; 
-                    locationImg ="https://source.unsplash.com/K1YRblz-rD0/720x480";
+                    locationImg ="url(https://source.unsplash.com/K1YRblz-rD0/720x480)";
                     longText = "";
                     break;
             case 4: placeId = "Singapore"; 
                     collectionsID ="9382095"; 
-                    locationImg ="https://source.unsplash.com/fZdI1VtMzA8/720x480";
+                    locationImg ="url(https://source.unsplash.com/fZdI1VtMzA8/720x480)";
                     longText = "";
                     break;
             case 5: placeId = "Ipoh"; 
                     collectionsID ="9382110";
-                    locationImg ="https://source.unsplash.com/Gm4hVeXsboA/720x480";
+                    locationImg ="url(https://source.unsplash.com/Gm4hVeXsboA/720x480)";
                     longText = "";
                     break;
             case 6: placeId = "Bangkok"; 
                     collectionsID ="9382114";
-                    locationImg ="https://source.unsplash.com/EFZqH5wzIbY/720x480";
+                    locationImg ="url(https://source.unsplash.com/EFZqH5wzIbY/720x480)";
                     longText = "";}
 
         console.log(placeId);
@@ -79,8 +79,9 @@ window.addEventListener("load", () =>{
            x.textContent =placeId; 
            var  text = document.getElementById("longText");
            text.textContent = longText;
-           var bigImage = document.getElementById("bigImage");
-           bigImage.src = locationImg;
+           var bigImage = document.getElementById("bg-image");
+           bigImage.style.background = locationImg;
+           bigImage.style.backgroundSize ="cover";
 
            
 
