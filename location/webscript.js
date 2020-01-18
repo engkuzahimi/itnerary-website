@@ -16,39 +16,46 @@ window.addEventListener("load", () =>{
         switch (placeNum) {
             case 0: placeId = "Kuala Lumpur"; 
                     collectionsID ="9381833";
-                    locationImg ="url(https://source.unsplash.com/oc4kVkjQJmI/720x480) 50% no-repeat";
+                    locationImg ="url(https://source.unsplash.com/oc4kVkjQJmI)50% no-repeat";
                     longText = "Kuala Lumpur is the capital city of Malaysia, boasting gleaming skyscrapers, colonial architecture, charming locals, and a myriad of natural attractions. Divided into numerous districts, its main hub is called the Golden Triangle which comprises Bukit Bintang, KLCC and Chinatown.";
                     break;
             case 1: placeId = "Penang"; 
                     collectionsID ="9382083";
-                    locationImg ="url(https://source.unsplash.com/_VI5TIoEvoE/720x480)";
-                    longText = "";  
+                    locationImg ="url(https://source.unsplash.com/_VI5TIoEvoE)50% no-repeat";
+                    longText = "Penang is a Malaysian state located on the northwest coast of Peninsular Malaysia, by the Malacca Strait. It has two parts: Penang Island, where the capital city, George Town, is located, and Seberang Perai (formerly Province Wellesley) on the Malay Peninsula.";  
                     break;
             case 2: placeId = "Maldives"; 
                     collectionsID ="9382075"; 
-                    locationImg ="url(https://source.unsplash.com/_p0OdENA13Y/720x480)";
-                    longText = ""; 
+                    locationImg ="url(https://source.unsplash.com/_p0OdENA13Y)50% no-repeat";
+                    longText = "Maldives, in full Republic of Maldives, also called Maldive Islands, independent island country in the north-central Indian Ocean. It consists of a chain of about 1,200 small coral islands and sandbanks (some 200 of which are inhabited), grouped in clusters, or atolls. "; 
                     break;
             case 3: placeId = "Ha Long"; 
                     collectionsID ="9382101"; 
-                    locationImg ="url(https://source.unsplash.com/K1YRblz-rD0/720x480)";
-                    longText = "";
+                    locationImg ="url(https://source.unsplash.com/K1YRblz-rD0)50% no-repeat";
+                    longText = "Halong Bay is a beautiful natural wonder in northern Vietnam near the Chinese border. The Bay is dotted with 1,600 limestone islands and islets and covers an area of over 1,500 sqkm. This extraordinary area was declared a UNESCO World Heritage Site in 1994.";
                     break;
             case 4: placeId = "Singapore"; 
                     collectionsID ="9382095"; 
-                    locationImg ="url(https://source.unsplash.com/fZdI1VtMzA8/720x480)";
-                    longText = "";
+                    locationImg ="url(https://source.unsplash.com/fZdI1VtMzA8)50% no-repeat";
+                    longText = "Singapore, officially the Republic of Singapore, is a sovereign island city-state in Southeast Asia. The country is situated about one degree (137 kilometres or 85 miles) north of the equator, at the southern tip of the Malay Peninsula, with Indonesia's Riau Islands to the south and Peninsular Malaysia to the north.";
                     break;
             case 5: placeId = "Ipoh"; 
                     collectionsID ="9382110";
-                    locationImg ="url(https://source.unsplash.com/Gm4hVeXsboA/720x480)";
-                    longText = "";
+                    locationImg ="url(https://source.unsplash.com/Gm4hVeXsboA)50% no-repeat";
+                    longText = "Ipoh (/ˈiːpoʊ/) is the capital city of the Malaysian state of Perak. Located by the Kinta River, it is nearly 180 km (110 mi) north of Kuala Lumpur and 123 km (76 mi) southeast of George Town in neighbouring Penang.";
+
                     break;
             case 6: placeId = "Bangkok"; 
                     collectionsID ="9382114";
-                    locationImg ="url(https://source.unsplash.com/EFZqH5wzIbY/720x480)";
-                    longText = "";}
-
+                    locationImg ="url(https://source.unsplash.com/EFZqH5wzIbY)50% no-repeat";
+                    longText = "Bangkok is the capital and most populous city of Thailand. It is known in Thai as Krung Thep Maha Nakhon or simply Krung Thep. The city occupies 1,568.7 square kilometres (605.7 sq mi) in the Chao Phraya River delta in central Thailand, and has a population of over eight million, or 12.6 percent of the country's population.";
+                    break;
+            case 7: placeId = "Jakarta"; 
+                    collectionsID ="9382120";
+                    locationImg ="https://source.unsplash.com/j9kwJlGRbPI)50% no-repeat";
+                    longText = "Bangkok is the capital and most populous city of Thailand. It is known in Thai as Krung Thep Maha Nakhon or simply Krung Thep. The city occupies 1,568.7 square kilometres (605.7 sq mi) in the Chao Phraya River delta in central Thailand, and has a population of over eight million, or 12.6 percent of the country's population.";
+                    break;
+        }
         console.log(placeId);
     var appkey = "c4b9f2cc0e97bc149548566e9bb5f8e13624a99cf6e17dea2e86f1cb446d1206";
     var apifetch = `https://api.unsplash.com/collections/${collectionsID}/photos?client_id=c4b9f2cc0e97bc149548566e9bb5f8e13624a99cf6e17dea2e86f1cb446d1206`
